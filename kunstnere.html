@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunstnere - Radar</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sqr6fmk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <header class="header">
+        <a href="index.html"><img src="IMG/radar.png" alt="Radar Logo" class="logo"></a>
+        <nav class="nav">
+            <ul>
+                <li><a href="kunstnere.html">KUNSTNERE</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="omos.html">OM OS</a></li>
+            </ul>
+        </nav>
+        <div class="navbuttons">
+            <a href="https://www.yourticket.dk/?ytroute=/&ytfilterarrid=89" class="ticket-btn" target="_blank">BILLETTER</a>
+            <a href="login.html" class="login-btn">LOG IND</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="kunstnere.html">KUNSTNERE</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="omos.html">OM OS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="artists-page">
+        <div class="header-container">
+            <h1 class="new-artist-header">Find Nye<br>Artister</h1>
+            <div class="filter-section">
+                <p>Musik Genre</p>
+                <div class="genres">
+                    <button class="genre-btn">Rock</button>
+                    <button class="genre-btn">Pop</button>
+                    <button class="genre-btn">Folkerock</button>
+                    <button class="genre-btn">Jazz</button>
+                    <button class="genre-btn">HipHop</button>
+                    <button class="genre-btn">House</button>
+                    <button class="genre-btn">Indie</button>
+                </div>
+            </div>
+        </div>                       
+        <section class="new-artist-cards-section" data-genre="HipHop,Jazz,House">
+            <div class="new-artist-card">
+                <div class="new-image-container">
+                    <img src="IMG/clothingclub.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">Clothing Club</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 234</p>
+                        <p class="new-artist-genre">HipHop, Jazz, House</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="Jazz">
+                <div class="new-image-container">
+                    <img src="IMG/annaroemer.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">Anna Roemer</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 15</p>
+                        <p class="new-artist-genre">Jazz</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="Indie">
+                <div class="new-image-container">
+                    <img src="IMG/guzo.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">GUZO</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 1134</p>
+                        <p class="new-artist-genre">Indie</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="Folkerock">
+                <div class="new-image-container">
+                    <img src="IMG/trubaduren.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">Trubaduren</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 456</p>
+                        <p class="new-artist-genre">Folkerock</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="Pop">
+                <div class="new-image-container">
+                    <img src="IMG/asbjørn.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">Asbjørn</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 145</p>
+                        <p class="new-artist-genre">Pop</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="Jazz">
+                <div class="new-image-container">
+                    <img src="IMG/ottooto.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">O T T O O T O</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 79</p>
+                        <p class="new-artist-genre">Jazz</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="Rock">
+                <div class="new-image-container">
+                    <img src="IMG/bissesvinet.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">Bissesvnet</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 799</p>
+                        <p class="new-artist-genre">Rock</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="Pop">
+                <div class="new-image-container">
+                    <img src="IMG/heart&sol.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">Heart & Sol</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 578</p>
+                        <p class="new-artist-genre">Pop</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="Jazz">
+                <div class="new-image-container">
+                    <img src="IMG/baryl.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">Baryl</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 45</p>
+                        <p class="new-artist-genre">Jazz</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="Pop">
+                <div class="new-image-container">
+                    <img src="IMG/iamjj.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">IAMJJ</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 134</p>
+                        <p class="new-artist-genre">Pop</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="Pop">
+                <div class="new-image-container">
+                    <img src="IMG/nikolajnørlund.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">Nikolaj Nørlund</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 8921</p>
+                        <p class="new-artist-genre">Pop</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+            <div class="new-artist-card" data-genre="HipHop">
+                <div class="new-image-container">
+                    <img src="IMG/ungskab.png" alt="Artist 1">
+                </div>
+                <div class="new-artist-info">
+                    <div class="new-artist-header">
+                        <span class="artist-h1">Ung-Skab</span>
+                    </div>
+                    <div class="info-row">
+                        <p class="artist-followers"><span class="material-icons">group</span> 690</p>
+                        <p class="new-artist-genre">HipHop</p>
+                    </div>
+                </div>
+                <div class="new-buttons">
+                    <button class="afspil-button">Afspil  <i class="material-icons">play_arrow</i></button>
+                    <button class="følg-button">Følg</button>
+                </div>                
+            </div>
+        </section>
+        
+        <button class="expand-more-button">
+            <i class="material-icons">expand_more</i>
+        </button>        
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="index.html"><img src="IMG/radar.png" alt="Radar Logo" class="logo"></a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="kunstnere.html">Kunstnere</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="omos.html">Om Os</a></li>
+                </ul>
+            </nav>
+            <div class="footer-top-button">
+                <a href="#" class="back-to-top"><span class="material-icons">arrow_circle_up</span>Tilbage til toppen</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <p class="footer-copy">Copyright © 2024</p>
+        </div>
+    </footer>   
+    <script src="canvas.js"></script>
+</body>
+</html>

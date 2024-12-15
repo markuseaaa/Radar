@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om os - Radar</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sqr6fmk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <header class="header">
+        <a href="index.html"><img src="IMG/radar.png" alt="Radar Logo" class="logo"></a>
+        <nav class="nav">
+            <ul>
+                <li><a href="kunstnere.html">KUNSTNERE</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="omos.html">OM OS</a></li>
+            </ul>
+        </nav>
+        <div class="navbuttons">
+            <a href="https://www.yourticket.dk/?ytroute=/&ytfilterarrid=89" class="ticket-btn" target="_blank">BILLETTER</a>
+            <a href="login.html" class="login-btn">LOG IND</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="kunstnere.html">KUNSTNERE</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="omos.html">OM OS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="omos-page">
+        <div class="hero-content">
+            <h1>Oplev den <br>bedste musik</h1>
+            <p>Vi på Radar stræber efter at få den unikke og nye musik ud til alle. Derfor kan du blandt andet følge dine favorit kunstnere for at vise du vil høre lige præcis dem på scenen.</p>
+        </div>
+        <div class="hero-image">
+            <img src="IMG/radar2.png" alt="Hero Image">
+        </div>
+        <section class="omos">
+            <h2>Unikke oplevelser</h2>
+            <p>Vi er en musikalsk platform og koncertscene beliggende i hjertet af Aarhus, dedikeret til at præsentere nye og etablerede artister fra både Danmark og resten af verden.</p>
+            <br>
+            <p>Hos Radar skaber vi unikke musikoplevelser gennem et bredt udvalg af koncerter og events, hvor kvalitet, diversitet og nyskabelse er i centrum. Vi stræber efter at være et samlingspunkt for musikelskere og et springbræt for talentfulde artister, der ønsker at dele deres lyd med et engageret publikum.</p>
+            <br>
+            <p>Vores mission er at bidrage til Aarhus’ pulserende kulturliv ved at tilbyde en scene, hvor musikken lever og udvikler sig. Kom og oplev magien – vi glæder os til at byde dig velkommen!</p>
+            <h2>Find os her</h2>
+            <h3>Karen Wegeners Gade 6 <br>8000 Aarhus C</h3>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.442268101559!2d10.200753315836055!3d56.15046888066302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3ff8bf61047d%3A0x358176f81242f88!2sKaren%20Wegeners%20Gade%206%2C%208000%20Aarhus%20C%2C%20Denmark!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                    width="1200"
+                    height="600"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <h2>Kontakt os</h2>
+            <h3>Bookingforespørgsler:<br>booking@radarlive.dk <br>Generel kontakt:<br>kontakt@radarlive.dk</h3>
+            <br>
+            <br>
+            <h3>Eller på telefon <br>+45 8676 0344</h3>            
+        </section>          
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="index.html"><img src="IMG/radar.png" alt="Radar Logo" class="logo"></a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="kunstnere.html">Kunstnere</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="omos.html">Om Os</a></li>
+                </ul>
+            </nav>
+            <div class="footer-top-button">
+                <a href="#" class="back-to-top"><span class="material-icons">arrow_circle_up</span>Tilbage til toppen</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <p class="footer-copy">Copyright © 2024</p>
+        </div>
+    </footer>      
+    <script src="canvas.js"></script>
+</body>
+</html>

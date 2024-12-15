@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sqr6fmk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <header class="header">
+        <a href="index.html"><img src="IMG/radar.png" alt="Radar Logo" class="logo"></a>
+        <nav class="nav">
+            <ul>
+                <li><a href="kunstnere.html">KUNSTNERE</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="omos.html">OM OS</a></li>
+            </ul>
+        </nav>
+        <div class="navbuttons">
+            <a href="https://www.yourticket.dk/?ytroute=/&ytfilterarrid=89" class="ticket-btn" target="_blank">BILLETTER</a>
+            <a href="login.html" class="login-btn">LOG IND</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="kunstnere.html">KUNSTNERE</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="omos.html">OM OS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="forside">
+        <div class="hero-content">
+            <h1>Musik for <br>Musik elskere</h1>
+            <p>Oplev unge og nye talenter på musikscenen, og vær med til at bestemme hvem du vil opleve på scenen</p>
+            <a href="#highlight-section" class="button">Læs mere  <i class="material-icons">chevron_right</i></a>
+        </div>
+        <div class="hero-image">
+            <img src="IMG/hero.png" alt="Hero Image">
+        </div>
+        <section id="highlight-section" class="highlight-section">
+            <div class="highlight-content">
+                <h2>Lyt til det nyeste musik i Aarhus</h2>
+                <p>
+                    Tag med på en musikalsk rejse og oplev spændende ny musik i Aarhus! Radar er stedet, 
+                    hvor musikken lever og vokser – fra upcoming artister til unikke koncertoplevelser, der 
+                    ikke findes andre steder. Kom forbi og lad dig inspirere af talentfulde musikere og bands, 
+                    som skaber lyden af i dag og i morgen.
+                </p>
+                <a href="events.html" class="button">Se events   <i class="material-icons">chevron_right</i></a>
+            </div>
+            <div class="highlight-image">
+                <div class="image-container">
+                    <img src="IMG/sange.png" alt="Music Collage">
+                </div>
+            </div>
+        </section>   
+        <section class="artists-section">
+            <div class="artists-images">
+                <div class="artist-card">
+                    <div class="image-container">
+                        <img src="IMG/clothingclub1.png" alt="Artist 1">
+                    </div>
+                    <p class="artist-title">Clothing Club</p>
+                    <p class="artist-info"><span class="material-icons">group</span> 234</p>
+                </div>
+                <div class="artist-card">
+                    <div class="image-container">
+                        <img src="IMG/annaroemer1.png" alt="Artist 2">
+                    </div>
+                    <p class="artist-title">Anna Roemer</p>
+                    <p class="artist-info"><span class="material-icons">group</span> 15</p>
+                </div>
+                <div class="artist-card">
+                    <div class="image-container">
+                        <img src="IMG/guzo1.png" alt="Artist 3">
+                    </div>
+                    <p class="artist-title">GUZO</p>
+                    <p class="artist-info"><span class="material-icons">group</span> 1134</p>
+                </div>
+                <div class="artist-card">
+                    <div class="image-container">
+                        <img src="IMG/trubaduren1.png" alt="Artist 4">
+                    </div>
+                    <p class="artist-title">Trubaduren</p>
+                    <p class="artist-info"><span class="material-icons">group</span> 456</p>
+                </div>
+            </div>
+            <div class="artists-text">
+                <h2>Følg de nyeste artister</h2>
+                <p>
+                    Nye artister spiller en stor rolle i musikscenens udvikling. De bringer friske perspektiver, banebrydende lyde 
+                    og autentiske fortællinger, der afspejler tidens tendenser. Upcoming talenter er med til at forme fremtidens 
+                    musiklandskab og give en stemme til en ny generation af kunstnere, der tør udfordre grænserne og skabe noget unikt.
+                </p>
+                <a href="kunstnere.html" class="button">Se kunstnere    <i class="material-icons">chevron_right</i></a>
+            </div>
+        </section>             
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="index.html"><img src="IMG/radar.png" alt="Radar Logo" class="logo"></a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="kunstnere.html">Kunstnere</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="omos.html">Om Os</a></li>
+                </ul>
+            </nav>
+            <div class="footer-top-button">
+                <a href="#" class="back-to-top"><span class="material-icons">arrow_circle_up</span>Tilbage til toppen</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <p class="footer-copy">Copyright © 2024</p>
+        </div>
+    </footer>      
+    <script src="canvas.js"></script>
+</body>
+</html>

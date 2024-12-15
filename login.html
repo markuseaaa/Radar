@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log ind - Radar</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sqr6fmk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <header class="header">
+        <a href="index.html"><img src="IMG/radar.png" alt="Radar Logo" class="logo"></a>
+        <nav class="nav">
+            <ul>
+                <li><a href="kunstnere.html">KUNSTNERE</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="omos.html">OM OS</a></li>
+            </ul>
+        </nav>
+        <div class="navbuttons">
+            <a href="https://www.yourticket.dk/?ytroute=/&ytfilterarrid=89" class="ticket-btn" target="_blank">BILLETTER</a>
+            <a href="login.html" class="login-btn">LOG IND</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="kunstnere.html">KUNSTNERE</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="omos.html">OM OS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="logind">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h1>Tilmeld dig</h1>
+                <p>Opret en profil og følg dine favorit artister, og få notifikationer for nye events og koncerter</p>
+            </div>
+            <div class="login-box">
+                <div class="social-login">
+                    <button class="social-button google">
+                        <img src="/IMG/google.png" alt="Google Icon" class="social-icon">
+                        <span>Log ind med Google</span>
+                    </button>
+                    <button class="social-button facebook">
+                        <img src="/IMG/facebook2.png" alt="Facebook Icon" class="social-icon">
+                    </button>
+                    <button class="social-button apple">
+                        <img src="/IMG/apple.png" alt="Apple Icon" class="social-icon">
+                    </button>
+                </div>
+                <form class="login-form">
+                    <label class="login-label" for="username-email">Skriv dit brugernavn eller email adresse</label>
+                    <input type="text" id="username-email" name="username-email" class="login-input" placeholder="Brugernavn eller email adresse" required>
+                    <label class="login-label" for="password">Skriv din adgangskode</label>
+                    <input type="password" id="password" name="password" class="login-input" placeholder="Adgangskode" required>
+                    <div class="forgot-password">
+                        <a href="#" class="forgot-password-link">Glemt adgangskode</a>
+                    </div>
+                    <button type="submit" class="button logind-button">LOG IND</button>
+                </form>
+                <div class="signup-link">
+                    <p>Ingen konto? <a href="#" class="signup-link-button">Opret dig</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="index.html"><img src="IMG/radar.png" alt="Radar Logo" class="logo"></a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="kunstnere.html">Kunstnere</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="omos.html">Om Os</a></li>
+                </ul>
+            </nav>
+            <div class="footer-top-button">
+                <a href="#" class="back-to-top"><span class="material-icons">arrow_circle_up</span>Tilbage til toppen</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <p class="footer-copy">Copyright © 2024</p>
+        </div>
+    </footer>      
+    <script src="canvas.js"></script>
+</body>
+</html>
