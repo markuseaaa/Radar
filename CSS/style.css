@@ -283,7 +283,7 @@ header, .forside, .omos-page {
         rgba(147, 197, 152, 0.2) 30%, 
         transparent 70% 
     );
-    z-index: 0; 
+    z-index: -1; 
     animation: float 10s infinite ease-in-out; 
     overflow-x: hidden;
 }
@@ -412,7 +412,8 @@ header, .forside, .omos-page {
 }
 
 .footer {
-    background-color: #052049;
+    position: relative;
+    background-color: transparent;
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
@@ -420,6 +421,7 @@ header, .forside, .omos-page {
     color: white;
     font-size: 0.9em;
     margin-top: 350px;
+    z-index: 2;
 }
 
 .footer-top {
@@ -444,6 +446,7 @@ header, .forside, .omos-page {
 .footer-nav li {
     position: relative; 
     padding: 0 25px; 
+    cursor: pointer;
 }
 
 .footer-nav li:not(:last-child)::after {
